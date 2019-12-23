@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0;}
+body,html{width: 100%; height: 100%;font-family: 'Noto Sans KR', sans-serif;font-family: 'Source Sans Pro', sans-serif;}
+ul{list-style: none;}
+a{text-decoration: none; color: #222328;}
+input,button{outline: none; border: none;}
+/*::-webkit-scrollbar {display:none;}*/
+.wrap{width:100vw; height: auto;position: relative;box-sizing: border-box;}
+.hd{position: fixed; left: 0vw; width:100vw;height: 100px;z-index: 99; background: white;}
+.logo{width: 16vw; height: 100px; position: absolute;margin-left: 2vw;}
+.logo img{display: block; height: 40%; margin-top: 1.6vw; }
+.login{width: 15%; position: absolute;top: 5px; line-height: 2; right: 2%;}
+.login a{display: block; width: 25%;float: left; text-align: center; font-size: 0.8em; }
+.login a:hover{font-weight: bold;}
+.menu{position: absolute; top: 36px; left: 23%;width: 60%; }
+.menu_li{float: left;width: 16.666666666666666666%; }
+.sub_menu{background: white;display: none; }
+.sub_menu:before{content: ""; width: 3000px; height: 315px; background: white; display: block;position: absolute; z-index: -1; top: -100px;margin-left: -500px; display: none;}
+.menu_a{text-align: center; display: block; width: 100%;font-size: 1.4em;letter-spacing: 0.1em; line-height: 40px; font-weight: bold;}
+.sub_menu a{display: block; text-align: center; line-height: 2; font-size: 0.9em; }
+.menu:hover .sub_menu,.menu:hover .sub_menu:before{display: block;}
+.menu:hover .hd{background: white;}
+.menu_a:hover{border-bottom: 2px solid #29c5ff; box-sizing: border-box;}
+.sub_menu a:hover{color: #29c5ff; font-weight: bold;}
+
+.main{width: 100%; height:740.45px; display: block; background: white;position: relative;overflow: hidden;}
+.main ul{position: absolute; top: 100px;width: 300%;}
+.main ul li{float: left; width:33.33333%; }
+.main img{display: block;width: 100%; cursor: pointer;}
+
+.sell{width: 80%; margin-left: 10%; margin-right: 10%; height:850px; display: block; background: white;position: relative;}
+.sell label{position: absolute; float: left;top: -6%; font-size: 1em; line-height: 3; }
+.sell .ra1{left: 5%; width:8%; text-align: center; display: block;}
+.sell .ra2{left: 16%;width:8%; display: block; text-align: center;}
+.sell input{display: none;}
+.cart{width: 94%; margin-left: 3%;margin-right: 3%; margin-top:4%;}
+.cart .tit{font-size: 2.3em; line-height: 3; font-weight: 200; text-indent: 1em;}
+.cart .tit span{font-weight:500;}
+.cart ul{width: 100%; height: 700px;}
+.cart ul li{float: left; width: 33.3333%; height:350px;position: relative;overflow: hidden;}
+.cart ul li>img{display: block; width:60%; margin-left: 20%; }
+.cart ul li>p{text-align: center; font-size: 1em; line-height:3;font-weight: 600; color: #505050;}
+.cart ul li:hover div{top: 0;}
+.cart ul li div{width: 100%;height: 350px; background: rgba(255,255,255,0.9); position: absolute; top: -100%; transition: 0.8s;}
+.cart ul li div .name{font-size: 1.5em; text-align: center; line-height: 4; }
+.cart ul li div .won{text-align: center; font-size: 1.6em; color: #a0a0a0; font-weight: 100; text-decoration-line:line-through; line-height: 1;}
+.cart ul li div .sale{text-align: center;line-height: 2;font-size: 2em;}
+.cart ul li div .star{margin-left:35%;margin-top: 15%;display: block; width: 30%;}
+.cart ul li div span{margin-left: 38%; display: block; margin-top: 5%; }
+.cart ul li div span img{cursor: pointer;}
+.cart ul li div span img:nth-child(2){margin-left: 3%;margin-right: 3%;}
+#ra1:checked ~ .cart{display: block; }
+#ra1:checked ~ .ra1{border-bottom: 3px solid #29c5ff; box-sizing: border-box;color: #29c5ff;}
+#ra1:checked ~ .grade{display: none; }
+#ra2:checked ~ .grade{display: block; }
+#ra2:checked ~ .cart{display: none; }
+#ra2:checked ~ .ra2{border-bottom: 3px solid #29c5ff; color: #29c5ff; box-sizing: border-box;}
+.grade{width: 94%; margin-left: 3%;margin-right: 3%; margin-top: 4%;}
+.grade .tit{font-size: 2.3em; line-height: 3; font-weight: 200;text-indent: 1em;}
+.grade .tit span{font-weight:500;}
+.grade ul{width: 100%; height: 700px;}
+.grade ul li{float: left; width: 33.3333%; height:350px;position: relative;overflow: hidden;}
+.grade ul li>img{display: block; width:60%; margin-left: 20%; }
+.grade ul li>p{text-align: center; font-size: 1em; line-height:3; font-weight: 600; color: #505050;}
+.grade ul li:hover div{top: 0;}
+.grade ul li div{width: 100%;height: 350px; background: rgba(255,255,255,0.9); position: absolute; top: -100%; transition: 0.8s;}
+.grade ul li div .name{font-size: 1.5em; text-align: center; line-height: 4; }
+.grade ul li div .won{text-align: center; font-size: 1.6em; color: #a0a0a0; font-weight: 100; text-decoration-line:line-through; line-height: 1;}
+.grade ul li div .sale{text-align: center;line-height: 2;font-size: 2em;}
+.grade ul li div .star{margin-left:35%;margin-top: 15%;display: block; width: 30%;}
+.grade ul li div span{margin-left: 38%; display: block; margin-top: 5%; }
+.grade ul li div span img{cursor: pointer;}
+.grade ul li div span img:nth-child(2){margin-left: 3%;margin-right: 3%;}
+
+.review{width: 90%; margin-left: 5%; margin-right: 5%; height: 650px; display: block;position: relative;  overflow: hidden;}
+.review .review_title{position: absolute; margin-top: 55px;  font-weight: 500; font-size: 2em;  margin-left: 10%;}
+.prev_btn{position: absolute; top: 16%;left: 28%;}
+.next_btn{position: absolute; top: 16%;left: 32%;}
+.reveiw_img .re_star{margin-left: 32%;}
+.reveiw_img .txt{line-height: 1.5; text-align: center;}
+.reveiw_img .rec{font-size: 0.8em; text-align: center; color: lightgray;}
+.reveiw_img_box{border: 1px solid #ccc; display: block; width: 20%; height: 61.6%;margin-left: 43%;margin-top: 9.3%; z-index:0;}
+.reveiw_img ul{position: absolute; top: 25%; left: 43%; width: 100%;}
+.reveiw_img li{float: left;width: 20%;}
+.reveiw_img li .tit{width: 90%; margin-left: 5%; display: block; }
+.review_txt{width: 40%;margin-left: 2%;background:rgba(201, 201, 201, 0.15); position: absolute; top: 25%;overflow: hidden;}
+.review_txt ul{width: 500%;}
+.review_txt ul li{float: left; width: 20%; position: relative;height:400px;}
+.review_txt ul li img{display: block; width:30%; height: 120px; margin-top: 8%;margin-left: 10%;}
+.review_txt ul li img:last-of-type{margin-top: 10%;}
+.review_txt ul li .name{position: absolute; top: 0;left: 47%; font-size: 1.1em;top: 13%;}
+.review_txt ul li .name2{top: 60%}
+.review_txt ul li .rec{position: absolute; top: 0;left: 47%;width: 45%;top: 20%; font-size: 0.75em;line-height: 1.7;}
+.review_txt ul li .rec2{top: 67%;}
+
+
+.insta{width: 100%; height:200px; display: block; background: #f0f0f0;position: relative; }
+.insta_text{position: absolute; top: 20%; left: 17%; }
+.insta_text p{margin-top: 5%; margin-left: 0.5em; font-size: 0.9em;}
+.insta_image{position: absolute; right: 8%; top: 13%;width: 60%; }
+.insta_image a{margin-left:8%;}
+.insta_image a:first-child{margin-left: 0;}
+.insta_image img{border-radius: 50%;}
+
+
+.ft{width: 80%; margin-left: 10%; margin-right: 10%; height:200px; display: block; background: white;position: relative;margin-top: 1%;}
+.ft_top{width: 100%; height: 60px;position: relative; border-bottom:2px dashed #9b9b9b;}
+.ft_top .ft_logo{display: block; width: 12%; position: absolute;left: 3%; top: 25%;}
+.ft_top .ft_logo img{display: block; width: 100%; }
+.ft_top ul{position: absolute;width: 30%; right: 0;top: 28%;}
+.ft_top ul li{float: left; margin-left: 5%; }
+.ft_top ul li a{font-size: 0.9em; font-weight:500; color: #666;}
+.ft_bot{height: 100px;margin-top: 1%;}
+.ft_bot p{text-align: center; font-size: 0.9em;line-height: 1.7;}
