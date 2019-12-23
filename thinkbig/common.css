@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+html, body	{margin:0;padding:0;}
+body { width: 100%;  font-family: 'NotoSans', "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;  overflow-x: hidden}
+ul, li	{ list-style:none;}
+img		{ border:0;vertical-align:top;}
+a{display: block;}
+
+
+
+
+
+.contbody{width: 100%; margin: 0 auto; position: relative; z-index: 20;overflow-x: hidden;}
+.contbody:after{content: ""; display: block; clear: both;}
+.menubtn, .ck_item{display: none;}
+
+.header{position: fixed; left: 0; top: 0; z-index: 100; width: 100%;height: 10px; background: white;position: relative; }
+.nav{position: absolute; top: 50px; right: 10%;width: 50%;}
+.nav_li{float: left;width: 20%; text-align: center; }
+.nav_a{text-decoration: none; height: 40px; font-size: 1.3em;font-weight: bold;; color: #333; }
+.nav_a:hover{border-bottom: 5px solid #8f9e43; box-sizing: border-box;}
+.gnb{width: 100%;}
+.gnb li{width: 100%;}
+.gnb a{display: block; text-decoration: none; color: #333;}
+.logoh1{float: left; margin: 15px 0 0 5% ; }
+
+/*
+.logoh1{float: left; margin: 15px 0 0 5% ; }
+.nav_li{float: left; margin: 60px -10px 0 0; width: 130px; text-align: center; font-weight: bold;}
+.nav_li{position: relative; float: left; min-height: 37px;}
+.nav_li a{display:inline-block;height:37px;line-height:37px;padding:0 10px;font-weight:bold;font-size:16px;color:#231f20; text-decoration: none;}
+.nav_li a:hover{border-bottom: 3px solid #8f9e43; }
+.contbody img{width: 100%;}
+.contbody ul{position: absolute; right:8%; }
+*/
+
+
+.container{clear: both;order: 2;width: 100%; height: auto; margin: 150px 0 0 150px;}
+.container img{width: 80%;}
+
+.quick{clear: both;order: 3;position: fixed; right: 0; top: 170px; z-index: 1100; width: 82px; background: gray;box-sizing: border-box; }
+.quick ul{padding: 30px 10px; border-bottom: 1px solid white;}
+.quick ul li{padding: 20px 0; text-align: center;}
+.quick a{text-decoration: none;display: block; padding: 0 5px; font-size: 13px;}
+.quick a span{margin-bottom: 10px; color: white; letter-spacing: -1px;}
+.quick a span .img{display: block;}
+.quick li:first-child{padding-top: 0;}
+.quick li:last-child{padding-bottom: 0; border-bottom:none;}
+.quickimg{width: 90%; margin-bottom: 10px;}
+
+.content{clear: both;order: 4;width: 100%;}
+.mainService{clear: both;background: #8f9e43;width: 100%; height: 70px; margin: 0 auto;margin-top:50px; position: relative; z-index: 20; overflow: hidden;}
+.mainService ul{margin: 0 9%;}
+.mainService li{width: 24%; height: 70px; float: left; background:#8f9e43; border-right: 3px solid white; overflow:hidden;}
+.mainService li:last-child{border-right: none;}
+.mainService img{ width: 50px; padding: 3%}
+.mainService a{text-decoration: none;display: block; font-size: 18px; text-align: center;line-height: 70px;}
+.mainService span{color: white; padding: 15px;}
+.mainService .mathimg{ width: 10%;padding-top: 3%;}
+.service span{font-size: 1.5em;}
+.subVisual{order: 5; position: relative; width: 85%;  height: 260px; margin:50px auto;overflow: hidden;}
+.subvisual1{width: 100%;}
+.subvisual1 li{width: 100%;}
+.subVisual img{width: 100%;}
+.control{display: none; width: 100%; position: absolute;left: 42%; z-index: 20; text-align: right;}
+.control li{float: left;list-style: none; border: 1px solid #a0a0a0; border-radius: 500px; width: 30px; height: 30px; background: #a0a0a0;margin: 0 1% ;}
+
+
+#page3{clear: both;width:100%;height: 700px; background: #f0f0f0; margin-top: 50px;text-align: center;}
+.service{clear: both; width: 100%; height: auto;}
+#page3 img{clear: both;display: block; width:600px; margin-top: 20px;}
+#page3 .img1{position: absolute; left: 300px;}
+#page3 .img2{position: absolute; right:300px;}
+#page3 .img3{position: absolute;margin-top: 350px; left: 300px;}
+#page3 .img4{position: absolute;margin-top: 350px; right:300px;}
+
+
+#footer{clear: both;background: lightgray; position: relative; padding: 0 12% 0 12%; box-sizing: border-box;margin-top: 50px; overflow: hidden; }
+.ftlogo{clear: both;position: absolute; left: 100px; top: 38px;}
+.ftcall{clear: both;position: absolute; right: 520px; top: 80px;}
+#footer ul{clear: both;padding: 55px 0 0 5%;}
+#footer .ftmenu li{clear: both;display: inline-block; margin-left: 80px;}
+#footer ul li a{clear: both;font-size: 18px; line-height: 19px; text-decoration: none; color: black; font-weight:600;}
+.adress{display: flex;clear: both;line-height: 30px; text-align:center;padding: 3% 0 0 15%;}
+.copy{clear: both;line-height: 30px; padding: 0 12%;}
+.socialIcon1{ float: left; display: inline-block; position: absolute; left: calc(100% - 53%); top: 135px;}
+.socialIcon2{ float: left; display: inline-block; position: absolute; left: calc(100% - 50%); top: 135px;}
+.socialIcon3{ float: left; display: inline-block; position: absolute; left: calc(100% - 47%); top: 135px;}
+.socialIcon4{ float: left; display: inline-block; position: absolute; left: calc(100% - 44%); top: 135px;}
+.ftcall{float: left;display: inline-block; position: absolute; top: 40%;}
+.ftcall a{text-align: center; margin-top: 5%;}
+.ftcall img{margin: 0 38%;}
+
+
+@media screen and (max-width:766px){
+    .header{height: 10%;}
+    .logoh1{float: left; margin: 2% 0 0 5% ; }
+    .nav{position: fixed;left: -110%;top: 0;z-index: 999; width: 100%; height: 5000px; 
+    background: red; transition: 0.5s; }
+    #ck1:checked ~ .nav{left: 0;}
+    #ck1:checked ~ .quick{/*어케하는겨 짱나게*/}
+    .menubtn .menuimg{position: absolute;display: block; width:10%;height: 50%; left:87%;margin-top: 15px; z-index: 999;}
+    #ck1{display: none;}
+    .menubtn{display: block; width: 100%;}
+    .menubtn a{text-indent: -9999px;}
+    .ck_item{}
+    .contbody img{width:45%;}
+    .container{margin: 17% 0 0 10%;}
+    .container img{width: 80%;}
+    .gnb{display: none;}
+    .quick{top: 8.8%; width: 10%;}
+    .quick ul{padding: 0; }
+    .quick a{padding: 0; font-size: 5px; font-weight: 200;}
+    .quickimg{padding: 5%; width: 70%; margin-bottom: 10%;}
+    .mainService .mathimg{ width: 17%;padding-top: 8%;}
+    .mainService{width: 100%; height: 10%; margin: 0 auto;margin-top:5%;}      
+    .mainService ul{margin: 0; height: 100%;}
+    .mainService li{width: 24%; height: 35px; }
+    .mainService img{ width: 25%; padding: 3%; padding-top: 7%;}
+    .mainService a{font-size: 0.1em; line-height:3em;}
+    .subVisual{ width: 100%; height:140px; margin:5% auto;overflow: hidden;}
+    .subVisual img{width: 85%;}
+    #page3{width:100%;height: 29%;margin-top: 5%;}
+    #page3 img{clear: both;display: block; width:40%; margin-top: 2%;}
+    #page3 .img1{position: absolute; left: 8%;}
+    #page3 .img2{position: absolute; right:8%;}
+    #page3 .img3{position: absolute;margin-top: 23%; left: 8%;}
+    #page3 .img4{position: absolute;margin-top: 23%; right:8%;}
+    #footer{padding: 0 5% 0 5%; height: 170px; margin-top: 10%; }
+    .ftlogo{left: 5%; top: 5%;}
+    .ftlogo img{padding-top: 9%; width: 40%;}
+    #footer ul{padding: 5% 0 0 22%;}
+    #footer .ftmenu li{margin-left: 8%;}
+    #footer ul li a{font-size: 0.7em; line-height: 2em;font-weight: 6500; }
+    .ftmenu{display: none;}
+    .adress{clear: both;font-size: 0.7em; line-height: 2em; text-align: center; padding: 25% 0 0 10%; text-align: center;}
+    .copy{font-size: 0.6em; line-height: 3em; padding: 0; text-align: center;margin-top: 0%;}
+    .snsicon img{display: block; width: 50%; }
+    .socialIcon1{ left: calc(100% - 25%); top: 17%;}
+    .socialIcon2{ left: calc(100% - 17%); top: 17%;}
+    .socialIcon3{ left: calc(100% - 25%); top: 30%;}
+    .socialIcon4{ left: calc(100% - 17%); top: 30%;}
+    .ftcall{left: calc(100% - 54%); top: 15%;}
+    .ftcall img{width:20px;}
+    .ftcall a{display: block; width: 150px;font-size: 0.1em; position: absolute; left: calc(100% - 150px); text-align: center; margin-top: 2px;font-weight: bold; margin-left:85px; margin-top: 5px;}
+}
+
+@media screen and (min-width:767px) and (max-width:959px){
+    .header{height: 10%;}
+    .gnb{ margin:40px -10px 0 0; width: 120px;}
+    .logoh1{float: left; margin: 2% 0 0 5% ; }
+    .contbody img{width:55%;}
+    .container{margin: 12.5% 0 0 10%;}
+    .container img{width: 80%;}
+    .quick{top: 13%; width: 10%;}
+    .quick ul{padding: 0; }
+    .quick a{padding: 0; font-size: 0.8em; font-weight: 200;}
+    .quickimg{padding: 13% 19% 0% 19%; width: 50%; margin-bottom: 10%;}
+    .mainService{width: 100%; height: 20%; margin: 0 auto;margin-top:5%;}
+    .mainService ul{margin: 0; height: 100%;}
+    .mainService li{width: 24%; height: 60px; }
+    .mainService img{ width: 25%; padding: 3%}
+    .mainService a{line-height:3em;}
+    .subVisual{ width: 100%; height:280px; margin:5% auto;overflow: hidden;}
+    .subVisual img{width: 80%;}
+    .mainService .mathimg{ width: 17%;padding-top: 3%;}
+    #page3{width:100%;height: 360px;margin-top: 5%;}
+    #page3 img{clear: both;display: block; width:40%; margin-top: 2%;}
+    #page3 .img1{position: absolute; left: 8%;}
+    #page3 .img2{position: absolute; right:8%;}
+    #page3 .img3{position: absolute;margin-top: 23%; left: 8%;}
+    #page3 .img4{position: absolute;margin-top: 23%; right:8%;}
+    #footer{padding: 0 0 0 5%;margin-top: 5%; height: 200px; }
+    .ftlogo{left: 5%; top: 5%;}
+    .ftlogo img{padding-top: 9%; width: 60%;}
+    #footer ul{padding: 3% 0 0 15%;}
+    #footer .ftmenu li{margin-left: 8%;}
+    #footer ul li a{font-size: 0.8em; line-height: 3em;font-weight: 600; text-align: center;}
+    .adress{clear: both;font-size: 0.7em; line-height: 2em; text-align: center; padding-left: 47.5%; text-align: center;margin-left: -30%;margin-top: -2%;}
+    .copy{font-size: 0.6em; line-height: 4em; padding: 0; text-align: center;margin-left: -30%;}
+    .snsicon img{width: 80%;}
+    .socialIcon1{ left: calc(100% - 30%); top: 32%;}
+    .socialIcon2{ left: calc(100% - 25%); top: 32%;}
+    .socialIcon3{ left: calc(100% - 20%); top: 32%;}
+    .socialIcon4{ left: calc(100% - 15%); top: 32%;}
+    .ftcall{left: calc(100% - 27%); top: 50%;}
+    .ftcall img{width:40px; margin-left: 10px;}
+    .ftcall a{display: block; width: 300px;font-size: 0.8em; position: absolute; left: calc(100% - 120px); text-align: center; margin-top: 10px;font-weight: bold;}
+    
+}
+
