@@ -1,0 +1,116 @@
+*{margin: 0; padding: 0;}
+html,body{width: 100%; height: 100%;font-family: 'Noto Sans KR', sans-serif;}
+ul{list-style: none;}
+a{text-decoration: none;}
+
+.wrap{width: 100%;}
+#nav{z-index: 9; position: fixed; right: 20px; top: 38%; margin-top: 50px;}
+#nav ul li{margin: 10px auto;}
+#nav ul li a{display: block; border-radius: 50%; width: 18px; height: 18px; border: 3px solid white; box-sizing: border-box;} 
+#nav li a.select2{border: none; background: white;}
+
+#page1{background-image: url(img/Untitled1.jpg); background-size: cover; background-position: center center; width: 100%; height: 100vh; display: block; background-repeat: no-repeat;position: relative;}
+#page1 .box{position: fixed; top: 30px; left: 30px; width: 40%; height: calc(100% - 60px); background: rgba(255, 255, 255, 0.6); z-index: 1; }
+#page1 #intro{position: absolute; top: 30px; left: 30px; width: 40%; height: calc(100% - 60px); background: transparent; z-index: 1; }
+#intro{width: 40%; height: calc(100% - 60px);position:relative;}
+#intro h2{position: absolute; left: calc(50% - 30px); top: 2%; font-size: 1.2em;color: rgba(0, 0, 0, 0.85);}
+#intro h2:after{content: "";display: block;  width: 40px; height: 1px; background: rgba(0, 0, 0, 0.85);position: absolute; top: 50%;left: 120%;}
+#intro h2:before{content: "";display: block;  width: 40px; height: 1px; background: rgba(0, 0, 0, 0.85);position: absolute; top: 50%;right: 120%;}
+#intro .name{position: absolute; top: 15%; left: 2%; color: rgba(0, 0, 0, 0.85);letter-spacing: 0.2em;font-size: 1.2em;font-weight: 100;}
+#intro .name span{font-weight: bold;}
+.detail{position: absolute; bottom:30%; right: 8%;}
+.detail h3{font-size: 4.5em;display: block; color: rgba(0, 0, 0, 0.85);letter-spacing: 0.05em; font-weight: bold;line-height: 1.2;}
+.detail .text{color:  rgba(0, 0, 0, 0.85); line-height: 5;text-align: center;}
+
+#page2{background-image: url(img/Untitled2.jpg); background-size: cover; background-position: center center; width: 100%; height: 100vh; display: block; background-repeat: no-repeat;position: relative;}
+#page2 .box{position: absolute; top: 30px; left: 30px; width: 40%; height: calc(100% - 60px); background: transparent; z-index: 1;}
+#intro2{width: 40%; height: calc(100% - 60px);position:relative;}
+#intro2 h2{position: absolute; left: calc(50% - 20px); top: 2%; font-size: 1.2em;color: rgba(0, 0, 0, 0.85);}
+#intro2 h2:after{content: "";display: block;  width: 40px; height: 1px; background: rgba(0, 0, 0, 0.85);position: absolute; top: 50%;left: 120%;}
+#intro2 h2:before{content: "";display: block;  width: 40px; height: 1px; background: rgba(0, 0, 0, 0.85);position: absolute; top: 50%;right: 120%;}
+#intro2 .detail{position: absolute; bottom:12%;left: calc(25% - 120px); text-align: center;}
+#intro2 .detail h3{font-size: 1.8em;line-height:2; background-image: url(img/underline2.png); background-repeat: no-repeat; background-position: center center; color: #393939;}
+#intro2 .detail .type{color: rgba(0, 0, 0, 0.85); line-height:3;}
+#intro2 .detail span{display: block; width: 100%;line-height:2.5;}
+.hs_img{display: block; width: 20%;position: absolute;left:calc(20% - 170px); top: 14%; z-index: 9;border:10px solid rgba(255, 255, 255, 0.4); border-radius: 50%;}
+#page2 .portfolio{position: absolute; top: 30px; width:54.45%; margin-left: 41.55%; height: 15%; height: calc(100% - 60px); background: rgba(255, 255, 255, 0.6); z-index: 1;}
+
+
+/*스킬*/
+
+ .skill{width: 500px; height: 200px; position: absolute; top:36%; left: 45%;}
+.skill h3{
+    display: block; 
+    color: #313131;
+     font-size: 1.5em;
+    position: relative; top: -10px;
+    
+}
+.skill>div{margin-left: 10px}
+.graph_out{width: 170px;height: 20px;background:#a5a2a2; position: relative;margin-bottom: 10px; border-radius: 10px; margin-top: 3%; margin-left: 15%;}
+.g_mask{width: 0%;height: 100%;position: absolute;overflow: hidden;border-radius: 10px;}
+.g_color{width: 170px;height: 20px;background: #727272;position: absolute; }
+.skill_txt{text-align: center;line-height:1; position: absolute; left: 0;}
+.license{position: absolute;top: 33%; left: 5%; line-height: 3; }
+.license h3,.education h3,.my h3{font-size: 1.5em;}
+.license p,.education p{text-indent: 2em;}
+.education{position: absolute; left: 5%; top: 10%;line-height: 3;  }
+.my{width: 80%; position: absolute; left: 5%; top:59%}
+.my h3{ line-height: 4;}
+.my p{width: 90%; margin-left: 2%; text-align: justify;line-height: 1.9;}
+
+
+
+#page3{background-image: url(img/Untitled3.jpg); background-size: cover; background-position: center center; width: 100%; height: 100vh; display: block; background-repeat: no-repeat;position: relative;}
+#page3 .box{position: absolute; top: 30px; left: 30px; width: 40%; height: calc(100% - 60px); background: transparent; z-index: 1;}
+#intro3{width: 40%; height: calc(100% - 60px);position:relative;}
+#intro3 h2{position: absolute; left: calc(50% - 20px); top: 2%; font-size: 1.2em;color: rgba(0, 0, 0, 0.85);}
+#intro3 h2:after{content: "";display: block;  width: 40px; height: 1px; background: rgba(0, 0, 0, 0.85);position: absolute; top: 50%;left: 120%;}
+#intro3 h2:before{content: "";display: block;  width: 40px; height: 1px; background: rgba(0, 0, 0, 0.85);position: absolute; top: 50%;right: 120%;}
+#page3 .portfolio{width: 54.45%; height: 94vh; background: rgba(255, 255, 255, 0.6);position: absolute; right: 4%; top: 3%;}
+#page3 .portfolio ul{width: 100%; width: 100%; height: 33.33333%;}
+#page3 .portfolio li{float: left; width: 33.33333%;height: 100%; padding: 2%; box-sizing: border-box;}
+#page3 .portfolio img{margin-left: 13%;margin-top: 5%; cursor: pointer;}
+#page3 .portfolio p{display: block; width: 90%; margin-left: 4.5%;; height: 15%;  text-align: center;color: #333;font-weight: bold; line-height: 2.5; background-image: url(img/underline2.png);background-size:50% 70%; background-position: center center; background-repeat: no-repeat; cursor: pointer;position: absolute;bottom: 1%;}
+.portall{position: absolute; top: 8%;left: calc(25% - 90px); }
+.portall img{display: block;width: 85%;}
+.portall .tit{display: block;width: 83%; text-align: center; font-size: 1.5em; line-height: 2.3;}
+.portall .more{display: block;width: 75%;  margin-left: 5%; text-align: center;line-height:1.5;font-size: 0.9em;margin-bottom: 2%;}
+.portall .tool{display: block;width: 75%;  margin-left: 5%; text-align: center;line-height:1.5;font-size: 0.9em;margin-bottom: 2%;}
+.gopage{position: absolute; left: calc(50% - 100px);margin-top: 1%;width: 15%; display: block; text-align: center;border: 2px solid black; box-sizing: border-box; border-radius: 10px; line-height: 2; font-size: 0.9em; color: black;}
+.gopage:hover{background: rgba(0, 0, 0, 0.62); border:2px solid transparent; color: white; transition: 0.6s;}
+#ra1:checked ~ .port_1{opacity: 1; visibility: visible;}
+#ra1:checked ~ .port_2,.port_3,.port_4,.port_5,.port_6,.port_7,.port_8,.port_9{opacity: 0; visibility: hidden;}
+#ra2:checked ~ .port_2{opacity: 1; visibility: visible;}
+#ra2:checked ~ .port_1,.port_3,.port_4,.port_5,.port_6,.port_7,.port_8,.port_9{opacity: 0; visibility: hidden;}
+#ra3:checked ~ .port_3{opacity: 1; visibility: visible;}
+#ra3:checked ~ .port_1,.port_2,.port_4,.port_5,.port_6,.port_7,.port_8,.port_9{opacity: 0; visibility: hidden;}
+#ra4:checked ~ .port_4{opacity: 1; visibility: visible;}
+#ra4:checked ~ .port_1,.port_2,.port_3,.port_5,.port_6,.port_7,.port_8,.port_9{opacity: 0; visibility: hidden;}
+#ra5:checked ~ .port_5{opacity: 1; visibility: visible;}
+#ra5:checked ~ .port_1,.port_2,.port_3,.port_4,.port_6,.port_7,.port_8,.port_9{opacity: 0; visibility: hidden;}
+#ra6:checked ~ .port_6{opacity: 1; visibility: visible;}
+#ra6:checked ~ .port_1,.port_2,.port_3,.port_4,.port_5,.port_7,.port_8,.port_9{opacity: 0; visibility: hidden;}
+#ra7:checked ~ .port_7{opacity: 1; visibility: visible;}
+#ra7:checked ~ .port_1,.port_2,.port_3,.port_4,.port_5,.port_6,.port_8,.port_9{opacity: 0; visibility: hidden;}
+#ra8:checked ~ .port_8{opacity: 1; visibility: visible;}
+#ra8:checked ~ .port_1,.port_2,.port_3,.port_4,.port_5,.port_6,.port_7,.port_9{opacity: 0; visibility: hidden;}
+#ra9:checked ~ .port_9{opacity: 1; visibility: visible;}
+#ra9:checked ~ .port_1,.port_2,.port_3,.port_4,.port_5,.port_6,.port_7,.port_8{opacity: 0; visibility: hidden;}
+#intro3 input{display: none;}
+.portfolio .label{width: 100%; height: 100%; display: block;position: relative;}
+.portfolio .label img{display: block; width: 73%;position: absolute; top: 6%;}
+.portfolio .label p{position: absolute; bottom:5%;}
+
+#page4{background-image: url(img/Untitled4.jpg); background-size: cover; background-position: center center; width: 100%; height: 100vh; display: block; background-repeat: no-repeat;position: relative;}
+#page4 .box{position: absolute; top: 30px; left: 30px; width: 40%; height: calc(100% - 60px); background: transparent; z-index: 1;}
+#intro4{width: 40%; height: calc(100% - 60px);position:relative;}
+#intro4 h2{position: absolute; left: calc(50% - 20px); top: 2%; font-size: 1.2em;color: rgba(0, 0, 0, 0.85);}
+#intro4 h2:after{content: "";display: block;  width: 40px; height: 1px; background: rgba(0, 0, 0, 0.85);position: absolute; top: 50%;left: 120%;}
+#intro4 h2:before{content: "";display: block;  width: 40px; height: 1px; background: rgba(0, 0, 0, 0.85);position: absolute; top: 50%;right: 120%;}
+#intro4 .detail{position: absolute; bottom:12%;left: calc(25% - 120px); text-align: center;}
+#intro4 .detail h3{font-size: 1.8em;line-height:2; background-image: url(img/underline2.png); background-repeat: no-repeat; background-position: center center; color: #393939;}
+#intro4 .detail .type{color: rgba(0, 0, 0, 0.85); line-height:3;}
+#intro4 .detail span{display: block; width: 100%;line-height:2.5;}
+.hs_img{display: block; width: 20%;position: absolute;left:calc(20% - 170px); top: 14%; z-index: 9;border:10px solid rgba(255, 255, 255, 0.4); border-radius: 50%;}
+#page4 .portfolio{position: absolute; top: 30px; width:54.45%; margin-left: 41.55%; height: 15%; height: calc(100% - 60px); background: rgba(255, 255, 255, 0.6); z-index: 1;}
